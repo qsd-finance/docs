@@ -1,0 +1,6 @@
+_docpress
+node_modules
+.idea
+.vercel
+.next
+out
