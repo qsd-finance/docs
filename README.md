@@ -1,8 +1,7 @@
-# Empty Set Documentation
+# Quantum Set Documentation
 
-This repo contains the documentation for the Empty Set Dollar (ESD) project.
+This repo contains the documentation for the Quantum Set Dollar (QSD) project.
 
-The live URL of the site is https://docs.emptyset.finance
 
 ## Summary
 
