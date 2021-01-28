@@ -29,18 +29,18 @@ export default {
       <meta httpEquiv="Content-Language" content="en" />
       <meta
         name="description"
-        content="Docs for Empty Set Dollar, an algorithmic stablecoin compatible with DeFi applications"
+        content="Docs for Quantum Set Dollar, an experimental stablecoin compatible with DeFi applications"
       />
       <meta
         name="og:description"
-        content="Docs for Empty Set Dollar, an algorithmic stablecoin compatible with DeFi applications"
+        content="Docs for Quantum Set Dollar, an experimental stablecoin compatible with DeFi applications"
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@shuding_" />
-      <meta name="og:title" content="Empty Set Dollar - Documentation" />
+      <meta name="og:title" content="Quantum Set Dollar - Documentation" />
       <meta
         name="apple-mobile-web-app-title"
-        content="Empty Set Dollar - Documentation"
+        content="Quantum Set Dollar - Documentation"
       />
     </React.Fragment>
   ),
