@@ -18,7 +18,7 @@ Whilst we took our inspiration from ESD, QSD is different in many ways. Here are
 
 - New functionality to make compounding of LP rewards easier
 
-<br>
+<br> 
 #### How can I earn rewards?
 
 You can earn QSD rewards by:
@@ -29,7 +29,7 @@ You can earn QSD rewards by:
 
 You can earn QSG rewards by bonding QSD when TWAP is below $1. You can earn further rewards by staging and bonding your QSG tokens in the QSG page on quantumset.finance. Those rewards will be paid in QSD tokens.
 
-<br>
+<br> 
 #### By how much will the supply expand each epoch?
 
 During our bootstrapping period which is the first 72 epochs, the supply will expand at a rate of 5.4%.
