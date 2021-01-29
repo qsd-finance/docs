@@ -1,6 +1,6 @@
 # Quantum Set Dollar - QSD
 
-![](/LP_Image_Dark.png)
+![](/LP_Image.png)
 
 ## What is Quantum Set Dollar?
 
