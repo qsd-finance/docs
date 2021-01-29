@@ -46,10 +46,10 @@ During our bootstrapping period, rewards are split equally between those bonding
 
 Following the bootstrapping period, rewards are split as follows:
 
-63% to bonded QSD holders
-27% to bonded LP token holders
-5% to the QSD treasury
-5% to QSG bonding rewards
+- 63% to bonded QSD holders
+- 27% to bonded LP token holders
+- 5% to the QSD treasury
+- 5% to QSG bonding rewards
 
 <br>
 
