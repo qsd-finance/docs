@@ -27,6 +27,7 @@ You can earn QSD rewards by:
 - Buying QSD tokens from Uniswap, providing liquidity to the Uniswap pair and bonding the LP tokens on the LP page at quantumset.finance
 
 You can earn QSG rewards by bonding QSD when TWAP is below $1. You can earn further rewards by staging and bonding your QSG tokens in the QSG page on quantumset.finance. Those rewards will be paid in QSD tokens.
+
 <br>
 
 #### By how much will the supply expand each epoch?
@@ -34,6 +35,7 @@ You can earn QSG rewards by bonding QSD when TWAP is below $1. You can earn furt
 During our bootstrapping period which is the first 72 epochs, the supply will expand at a rate of 5.4%.
 
 After the bootstrapping period, the supply will expand at a rate of 5.4% when TWAP is $1.10 or more. When TWAP is between $1 and $1.10, there is a proportionate sliding scale of rewards from just above 0% to 5.4%.
+
 <br>
 
 #### How are rewards split?
