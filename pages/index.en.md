@@ -4,11 +4,13 @@
 
 ## What is Quantum Set Dollar?
 
-Quantum Set Dollar (QSD) is a decentralized algorithmic stablecoin, designed to self-stabilize to the value of 1 DAI. The stabilization effect is achieved through phases of supply expansion when QSD is valued above 1 DAI and incentives to increase price when QSD is valued below 1 DAI.
-The protocol is centred around 2 ERC-20 tokens:
+Quantum Set Dollar (QSD) is a decentralised, experimental stablecoin, using previous stablecoin designs as its foundation. Updated mechanics ensure improved peg stability and the ability to easily iterate provides an experimental edge for innovation limited only by imagination.
 
-- QSD - The Self-Stabilizing Dollar Token
-- QSG - The Governance Token
+QSD is designed to be pegged to the value of 1 DAI. This is achieved through phases of supply expansion when QSD is valued above 1 DAI and incentives to increase price when QSD is valued below 1 DAI. The protocol is centred around 2 ERC-20 tokens:
+
+QSD - Quantum Set Dollar
+QSG - Quantum Set Governance
+
 
 ## Features
 
