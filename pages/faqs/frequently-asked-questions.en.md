@@ -1,95 +1,107 @@
 # QSD Frequently Asked Questions
 
-<br/>
+**How is QSD different from ESD and its various forks?**
 
-* **How is QSD different from ESD, DSD xSD and other stablecoin forks?**    
+Whilst we took our inspiration from ESD, QSD is different in many ways. Here are the the highlights:
 
-Whilst we took our inspiration from ESD, QSD is different in many ways. Here the the highlights:    
-4 hour epochs    
-No Lock ups other than 1 epoch delay for security    
-QSD bonding is during contraction periods only, LP’ng can be done any time          
-Separate governance token (QSG) for DAO that can be earned by bonding QSD when below peg. QSG can also be staked to earn further rewards, paid in QSD    
-Non-Compounding QSD rewards       
-Single asset compounding of LP Rewards     
-<br/>
+- 4 hour epochs
 
-* **How can I earn rewards?**
+- No lockups other than a 1 epoch delay between unbonding and withdrawing (which is in fact a security feature of the code)
 
-You can earn QSD rewards by doing one or all of the following:
+- QSD bonding is only available when time weighted average price (TWAP) is below $1
 
-Providing liquidity to the QSD/DAI uniswap pool [here] and bond resulting LP tokens here [insert hyperlink]
-Bond QSD here [insert hyperlink]
-Additional QSD can also be earned by staking the governance token QSG here [insert hyperlink] 
+- Separate governance token (QSG) that can be earned by bonding QSD when TWAP is below $1
 
-<br/>
+- QSG can also be staked to earn further rewards, paid in QSD
 
-* **How are rewards split?**
+- QSD bonding rewards do not autocompound
 
-During expansion, LP and QSD bonders are rewarded and a small portion is allocated to the treasury. On a sliding scale, up to 5.4% of supply is split between LP, bonded QSD and treasury (63%,27%,10%)
+- New functionality to make compounding of LP rewards easier
 
-<br/>
+**How can I earn rewards?**
 
-* **Do rewards compound?**
+You can earn QSD rewards by:
 
-LP rewards can be compounded using the button available on the UI, which will automatically sell half of your rewarded QSD to DAI and add to your LP. During Bootstrapping QSD rewards will compound, however, post bootstrapping QSD rewards will not automatically compound, this is to encourage selling above peg.
+- Buying QSD tokens from Uniswap and bonding them on the QSD page at quantumset.finance (tokens can only be bonded when TWAP is below $1 and QSD rewards are only available when TWAP is $1 or more)
 
-<br/>
+- Buying QSD tokens from Uniswap, providing liquidity to the Uniswap pair and bonding the LP tokens on the LP page at quantumset.finance
 
- * **What does bonded/unbonded mean?**
+You can earn QSG rewards by bonding QSD when TWAP is below $1. You can earn further rewards by staging and bonding your QSG tokens in the QSG page on quantumset.finance. Those rewards will be paid in QSD tokens.
 
-If your LP tokens or QSD are showing in a bonded state, it means that you are earning rewards as long as the TWAP is >$1. You may unbond at any time but this will stop accruing rewards. When the state is unbonded, you may withdraw your LP, QSD or rewards in the following EPOCH after the one you unbonded in. 
+**By how much will the supply expand each epoch?**
 
-<br/>
+During our bootstrapping period which is the first 72 epochs, the supply will expand at a rate of 5.4%.
 
-* **What is an EPOCH**
+After the bootstrapping period, the supply will expand at a rate of 5.4% when TWAP is $1.10 or more. When TWAP is between $1 and $1.10, there is a proportionate sliding scale of rewards from just above 0% to 5.4%.
 
-An epoch is simply a block of time for the protocol expansion or contraction. Currently this time for QSD is 4 hours. During expansion, rewards are calculated and awarded per epoch. 
+**How are rewards split?**
 
-<br/>
+During our bootstrapping period, rewards are split equally between those bonding QSD tokens and those bonding LP tokens.
 
-* **Can I bond QSD while in expansion?**
+Following the bootstrapping period, rewards are split as follows:
 
-No, you can only bond QSD below peg while TWAP is below $1.
+63% to bonded QSD holders
+27% to bonded LP token holders
+5% to the QSD treasury
+5% to QSG bonding rewards
 
-<br/>
+**Do rewards compound?**
 
+During bootstrapping, rewards paid to bonded QSD holders autocompound.
 
-* **Can I add to my bonded QSD below peg?** 
+Post-bootstrapping, these will not autocompound. This is to encourage selling QSD rewards when TWAP is above the $1 peg.
 
-Yes
+LP rewards can be compounded at any time using the Single Supply option in the Provide section at the bottom of the LP page. This option will sell half of your rewarded QSD into DAI, add liquidity to Uniswap and bond your LP tokens through one click.
 
-<br/>
+**What does bonded/unbonded mean?**
 
-* **What happens to the QSD in treasury?**
+If your LP tokens or QSD are showing in a bonded state, it means that you are earning expansion rewards as long as the TWAP is above $1. In the case of bonded QSD, you are earning QSG rewards when TWAP is below $1. You may unbond at any time but this will mean you stop accruing rewards. Once you have unbonded, you may withdraw your tokens 1 epoch later.
 
-Funds in the treasury are controlled by QSG holders and will be used for ongoing development of the protocol. Any changes to the protocol and release of spending funds from the treasury will be voted upon by the DAO. 
+**What is an epoch?**
 
-<br/>
+An epoch is simply a block of time that the protocol uses as part of its mechanics. QSD epochs are 4 hours long. Rewards are awarded each epoch where applicable.
 
-* **What is QSG (Quantum Set Governance Token)?**
+**Can I bond QSD while in expansion?**
 
-QSG is a valueless governance token for QSD and is the DAO for the protocol. It can only be earned by bonding QSD when the protocol is below peg. Furthermore, earned QSG can be staked to earn more rewards paid in QSD. QSG holders can submit and vote on proposals in DAO. Quorum for passing of proposals is 33%.
+Yes, during the initial bootstrapping phase you can bond at any time.
 
-<br/>
+Post-bootstraping, no, you can only bond QSD below peg while TWAP is below $1.
 
-* **Can I withdraw rewards any time or is there a lock?** 
+**Can I add to my bonded QSD below peg?**
 
-You can withdraw your rewards 1 epoch after you unbond.  This 1 epoch delay is a security feature. 
+Yes.
 
-<br/>
+**What happens to the QSD in the treasury?**
 
-* **What about coupons?**
+As of launch, funds in the treasury can only be used to pay for the development costs of implementing any successfully passed governance proposal. The funds can also be used in the unlikely event that work is needed to bring the protocol in line with what is described in our initial Medium article. An amount of 4509 QSD will be deducted from the treasury after it starts receiving funds in epoch 73 to facilitate the second airdrop referred to in our Medium article. Gas costs of advancing epochs will also come from the treasury.
 
-QSD does not issue coupons. Rejoice. 
+Beyond that, expenditure from the treasury can only be authorised by a successfully passed governance proposal.
 
-<br/>
+**What is QSG?**
 
-* **How do I contribute to the protocol and/or participate in governance?**
+QSG stands for Quantum Set Governance and is a valueless governance token for the QSD protocol. It can only be earned when TWAP is below $1 and by users who have bonded QSD at that time. QSG tokens can themselves be staged and bonded to propose changes to the protocol in the DAO (Governance section on the quantumset.finance page), vote on proposals and to earn governance rewards.
 
-When the protocol is below peg, you can bond QSD and earn governance tokens - QSG. QSG holders can vote for proposals. Anyone can participate in community discussions in discord channels. 
+The threshold for submitting a proposal is 0.9% of DAO ownership, ie. total QSG supply and the quorum for passing a proposal is 33%.
 
-<br/>
+**Can I withdraw rewards at any time or is there a lock?**
 
-* **Who is the team?**
+You can withdraw your rewards 1 epoch after you unbond. This 1 epoch delay is a security feature that helps prevent the protocol from being exploited by hackers and other bad actors.
 
-The team is anon but are experienced Crypto enthusiasts and early investors in existing algorithmic stablecoins. 
+For QSD bonding rewards during bootstrapping, you can choose to let the rewards autocompound or you can unbond a partial or full amount at any time. If you wish to unbond the amount you have earned each epoch, we recommend you keep a record of the number of QSD you initially bond so you can calculate the amount you wish to unbond each epoch during the bootstrapping period.
+
+For QSD bonding rewards during bootstrapping, you can Poke to move your rewards to Claimable and withdraw them 1 epoch later.
+
+For LP rewards (either during or after bootstrapping), you can unbond to move rewards to Claimable. We recommend rebonding your LP tokens to continue earning rewards.
+
+**What about coupons and debt?**
+
+These features do not exist in the QSD protocol and have been replaced by our below the peg mechanics that only allow entry for rewards on bonded QSD when TWAP is below $1, as well as QSG farming which can only take place below the peg.
+
+**How do I contribute to the protocol and/or participate in governance?**
+
+When TWAP is below $1, you can bond QSD and earn governance tokens - QSG. QSG holders can submit and vote for proposals. Anyone can participate in community discussions in our Discord server and Telegram group.
+
+**Who is the core team?**
+
+The team is a group of anonymous crypto investors and technical professionals. Feel free to come into our Discord and Telegram and get to know us. We are looking forward to meeting you.
+
