@@ -19,7 +19,7 @@ Quantum Set Dollar has composed a number of different mechanics from various ela
 * **Selling Pressure Above Peg**
 
 1 Epoch Lock up to encourage selling above peg and avoid rewards bottlenecking    
-Single assed DAI/QSD LP Zap function to sell 50% of rewarded QSD to DAI and add to LP    
+Single asset DAI/QSD LP Zap function to sell 50% of rewarded QSD to DAI and add to LP    
 
 
 * **Incentives Below Peg**
