@@ -1,4 +1,4 @@
-** Model **
+# Model
 
 - Epoch Length: 4 Hours
 - Advance() incentive: 10 QSD
