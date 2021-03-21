@@ -1,6 +1,6 @@
 # QSD Governance
 
-Post-Bootstrapping, holders of the Quantum Set Governance Token will govern the Quantum Set Protocol and the QSD Treasury.
+Holders of the Quantum Set Governance Token will govern the Quantum Set Protocol and the QSD Treasury.
 
 The Governcance Structure is listed below.
 
