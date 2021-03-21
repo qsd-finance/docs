@@ -27,7 +27,11 @@ Single asset BUSD/QSD LP Zap function to sell 50% of rewarded QSD to DAI and add
 QSD Bonding access Below Peg Only    
 QSG Farming Below Peg Only 
 
-Treasury buy back and burn yeild farming strategies
+Treasury buy back and burn yield farming strategy
+
+For more information see this article:
+
+https://quantumsetdollar.medium.com/introducing-quantum-set-dollar-v2-0-2adb0e5e1159
 
 
 
