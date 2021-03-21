@@ -1,20 +1,22 @@
 # QSD Frequently Asked Questions
 
-#### How is QSD different from ESD and its various forks?
+#### How is QSD different from other algorithmic stablecoins?
 
 Whilst we took our inspiration from ESD, QSD is different in many ways. Here are the the highlights:
 
 - 4 hour epochs
 
+- Treasury buy back and burn yield farming strategy
+
+- Implimentation of the Goldilocks zone ($0.98 - $1.00) : Expanion above $1.02, contraction below $0.98, 
+
 - No lockups other than a 1 epoch delay between unbonding and withdrawing (which is in fact a security feature of the code)
 
-- QSD bonding is only available when time weighted average price (TWAP) is below $1
+- QSD bonding is only available when time weighted average price (TWAP) is below $1.02
 
-- Separate governance token (QSG) that can be earned by bonding QSD when TWAP is below $1
+- Separate governance token (QSG) that can be earned by bonding QSD when TWAP is below $1.02
 
 - QSG can also be staked to earn further rewards, paid in QSD
-
-- QSD bonding rewards do not autocompound
 
 - New functionality to make compounding of LP rewards easier
 
@@ -24,9 +26,9 @@ Whilst we took our inspiration from ESD, QSD is different in many ways. Here are
 
 You can earn QSD rewards by:
 
-- Buying QSD tokens from Uniswap and bonding them on the QSD page at quantumset.finance (tokens can only be bonded when TWAP is below $1 and QSD rewards are only available when TWAP is $1 or more)
+- Buying QSD tokens from Pancakeswap and bonding them on the QSD page at quantumset.finance (tokens can only be bonded when TWAP is below $1 and QSD rewards are only available when TWAP is $1 or more)
 
-- Buying QSD tokens from Uniswap, providing liquidity to the Uniswap pair and bonding the LP tokens on the LP page at quantumset.finance
+- Buying QSD tokens from Pancakswap, providing liquidity to the Pancakeswap pair and bonding the LP tokens on the LP page at quantumset.finance
 
 You can earn QSG rewards by bonding QSD when TWAP is below $1. You can earn further rewards by staging and bonding your QSG tokens in the QSG page on quantumset.finance. Those rewards will be paid in QSD tokens.
 
@@ -34,9 +36,7 @@ You can earn QSG rewards by bonding QSD when TWAP is below $1. You can earn furt
 
 #### By how much will the supply expand each epoch?
 
-During our bootstrapping period which is the first 72 epochs, the supply will expand at a rate of 5.4%.
-
-After the bootstrapping period, the supply will expand at a rate of 5.4% when TWAP is $1.10 or more. When TWAP is between $1 and $1.10, there is a proportionate sliding scale of rewards from just above 0% to 5.4%.
+The supply will expand at a rate of 5.4% when TWAP is $1.10 or more. When TWAP is between $1.02 and $1.10, there is a proportionate sliding scale of rewards from just above 0% to 5.4%.
 
 <br/>
 
@@ -46,18 +46,16 @@ During our bootstrapping period, rewards are split equally between those bonding
 
 Following the bootstrapping period, rewards are split as follows:
 
-- 63% to bonded QSD holders
-- 27% to bonded LP token holders
-- 5% to the QSD treasury
-- 5% to QSG bonding rewards
+- 40% to bonded QSD holders
+- 35% to bonded LP token holders
+- 15% to the QSD treasury
+- 10% to QSG bonding rewards
 
 <br/>
 
 #### Do rewards compound?
 
-During bootstrapping, rewards paid to bonded QSD holders autocompound.
-
-Post-bootstrapping, these will not autocompound. This is to encourage selling QSD rewards when TWAP is above the $1 peg.
+These will not autocompound. This is to encourage selling QSD rewards when TWAP is above the $1.02 peg.
 
 LP rewards can be compounded at any time using the Single Supply option in the Provide section at the bottom of the LP page. This option will sell half of your rewarded QSD into DAI, add liquidity to Uniswap and bond your LP tokens through one click.
 
@@ -77,9 +75,7 @@ An epoch is simply a block of time that the protocol uses as part of its mechani
 
 #### Can I bond QSD while in expansion?
 
-Yes, during the initial bootstrapping phase you can bond at any time.
-
-Post-bootstraping, no, you can only bond QSD below peg while TWAP is below $1.
+No, you can only bond QSD below peg while TWAP is below $1.02. However you can bond QSD:BUSD Lp tokens at any time.
 
 <br/>
 
@@ -91,9 +87,17 @@ Yes.
 
 #### What happens to the QSD in the treasury?
 
-As of launch, funds in the treasury can only be used to pay for the development costs of implementing any successfully passed governance proposal. The funds can also be used in the unlikely event that work is needed to bring the protocol in line with what is described in our initial Medium article. An amount of 4509 QSD will be deducted from the treasury after it starts receiving funds in epoch 73 to facilitate the second airdrop referred to in our Medium article. Gas costs of advancing epochs will also come from the treasury.
+Treasury funds are used for 2 purposes: the first is for protocol development costs which is 25% of the funds, the 2nd is for the buy back and burn strategy which accounts for the remaining 75% of treasury funds.
 
-Beyond that, expenditure from the treasury can only be authorised by a successfully passed governance proposal.
+<br/>
+
+#### What is the treasury buy back and burn yield farming strategy?
+
+75% of the treasury funds are earmarked for the strategy outlined below:
+- Sell rewards to BUSD
+- Deposit BUSD (+BUSD:QSD LP and QSD where available) to High APY yield farms on BSC
+- Use the yield from these farm to buy back and burn QSD when price is below $98c
+- The initial treaasury investment is never removed, ensuring constant buying pressure for QSD  
 
 <br/>
 
@@ -119,7 +123,7 @@ For LP rewards (either during or after bootstrapping), you can unbond to move re
 
 #### What about coupons and debt?
 
-These features do not exist in the QSD protocol and have been replaced by our below the peg mechanics that only allow entry for rewards on bonded QSD when TWAP is below $1, as well as QSG farming which can only take place below the peg.
+These features do not exist in the QSD protocol and have been replaced by our tresury buy back and burn yield farming strategy, as well as our below the peg mechanics that only allow entry for rewards on bonded QSD when TWAP is below $1 and QSG farming which can only take place below the peg.
 
 <br/>
 
