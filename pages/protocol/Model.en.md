@@ -1,6 +1,7 @@
+**** Model ****
 
 - Epoch Length: 4 Hours
-- Advance() incentive: 108 QSD
+- Advance() incentive: 10 QSD
 - QSD Lockup: 1 Epoch
 - LP Lockup: 1 Epoch
 - Maximum Supply Expansion: 5.4%
